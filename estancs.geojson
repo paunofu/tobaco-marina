@@ -1,0 +1,454 @@
+var estanc=
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2022-10-23T14:01:54Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/998033853",
+        "building": "retail",
+        "building:levels": "2",
+        "name": "Tabacos",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.15116,
+          38.84823
+        ]
+      },
+      "id": "way/998033853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1741779661",
+        "addr:country": "ES",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0850355,
+          38.7748726
+        ]
+      },
+      "id": "node/1741779661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1990001722",
+        "addr:housenumber": "27",
+        "addr:street": "Carrer del Marqués de Campo",
+        "name": "Tabacos",
+        "opening_hours": "Dl-Dg 09:30-21:00",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "ref": "Exp. nº7",
+        "shop": "tobacco",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1091031,
+          38.840652
+        ]
+      },
+      "id": "node/1990001722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3957441995",
+        "name": "Tabacos",
+        "shop": "tobacco",
+        "stamps": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.077827,
+          38.8359803
+        ]
+      },
+      "id": "node/3957441995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4983825533",
+        "name": "Estanco Aduanas",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1821521,
+          38.7953575
+        ]
+      },
+      "id": "node/4983825533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4985897022",
+        "name": "Estanco",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1900674,
+          38.7718043
+        ]
+      },
+      "id": "node/4985897022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5037252324",
+        "name": "Estanc del Malcriat",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1094679,
+          38.8449181
+        ]
+      },
+      "id": "node/5037252324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5054861826",
+        "name": "Estanco",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0781542,
+          38.8548897
+        ]
+      },
+      "id": "node/5054861826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5588650727",
+        "name": "Estanco",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0728242,
+          38.6447998
+        ]
+      },
+      "id": "node/5588650727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5874127940",
+        "name": "Tabacos",
+        "shop": "tobacco",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0631631,
+          38.8311748
+        ]
+      },
+      "id": "node/5874127940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6021608798",
+        "name": "CBD Store Spain",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1868045,
+          38.7744269
+        ]
+      },
+      "id": "node/6021608798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6557833990",
+        "name": "Tabacos La Cava del Saladar",
+        "ref": "2",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.107453,
+          38.8371945
+        ]
+      },
+      "id": "node/6557833990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6666065336",
+        "addr:city": "Calp",
+        "addr:housenumber": "1",
+        "addr:postcode": "03710",
+        "addr:street": "Avenida del Port",
+        "email": "estanco@ifach.es",
+        "name": "Estanco Peñón de Ifacah",
+        "opening_hours": "Dl-Ds 09:30-21:00",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+34 965 831 482",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0695144,
+          38.6402462
+        ]
+      },
+      "id": "node/6666065336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8507395708",
+        "name": "Tabacos",
+        "opening_hours": "Dl-Ds 09:00-21:00",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "ref": "10",
+        "shop": "tobacco",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1027962,
+          38.8360962
+        ]
+      },
+      "id": "node/8507395708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8507396221",
+        "addr:city": "Dénia",
+        "addr:housenumber": "20",
+        "addr:postcode": "03700",
+        "addr:street": "Carretera de Dénia a Xàbia",
+        "air_conditioning": "yes",
+        "email": "info@yeguadalatroyeta.es",
+        "loc_name": "Estanc les Rotes",
+        "loc_name:ca": "Estanc les Rotes",
+        "loc_name:es": "Estanco les Rotes",
+        "name": "Expendeduría Les Rotes",
+        "opening_hours": "Dm-Dg 08:30-14:30,17:00-20:30",
+        "opening_hours:covid19": "same",
+        "operator": "Troya",
+        "payment:cards": "yes",
+        "payment:coins": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:notes": "yes",
+        "payment:telephone_cards": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "phone": "+34 965788625",
+        "shop": "tobacco",
+        "stroller": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1174984,
+          38.8364584
+        ]
+      },
+      "id": "node/8507396221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8739909697",
+        "name": "Estanco",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.050654,
+          38.7143196
+        ]
+      },
+      "id": "node/8739909697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8895637328",
+        "name": "Tabacos",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0501657,
+          38.7155247
+        ]
+      },
+      "id": "node/8895637328"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9019649921",
+        "name": "Tabacco",
+        "opening_hours": "Dl-Dv 09:00-20:00; Ds 09:00-19:00",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1319277,
+          38.6888004
+        ]
+      },
+      "id": "node/9019649921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9330133944",
+        "name": "Tabacos",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0421598,
+          38.7506905
+        ]
+      },
+      "id": "node/9330133944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9413943401",
+        "name": "Tabacos",
+        "ref": "3",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.101773,
+          38.8427811
+        ]
+      },
+      "id": "node/9413943401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9413943402",
+        "name": "Tabacos",
+        "shop": "tobacco",
+        "stamps": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1102659,
+          38.8432835
+        ]
+      },
+      "id": "node/9413943402"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9524931765",
+        "name": "Tabacos",
+        "ref": "1",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0283078,
+          38.7924575
+        ]
+      },
+      "id": "node/9524931765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9839379770",
+        "name": "TABACOS",
+        "ref": "1",
+        "shop": "tobacco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0967616,
+          38.8261494
+        ]
+      },
+      "id": "node/9839379770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9871237035",
+        "local_ref": "1",
+        "name": "TABACOS",
+        "shop": "tobacco",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0145932,
+          38.8298582
+        ]
+      },
+      "id": "node/9871237035"
+    }
+  ]
+}

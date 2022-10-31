@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Aparcaments de bicis a la Marina Alta</title>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.0/dist/MarkerCluster.Default.css" />
+
+
+<script src="https://unpkg.com/leaflet.markercluster@1.4.0/dist/leaflet.markercluster.js"></script>
+
+
+<script src="estancs.geojson"></script>
+<script src="maquines.geojson"></script>
+<style>
+body {margin: 0; pad: 0; }
+#map {position: absolute; top: 0; bottom: 0; width: 100%;}
+</style>
+
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+<script>
+
+var osmcarto = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: 'Dades &copy; <a href="http://osm.org/copyright" target="blanck">Col·laboradors de OpenStreetMap</a> (<a href="http://www.openstreetmap.org/copyright" target="blanck">ODbL</a>) | Tesseles <a href="https://github.com/gravitystorm/openstreetmap-carto" target="blanck">OSM Carto</a> | <a href="https://github.com/paunofu/Aparcabicis-a-la-Marina" target="blanck">Més info</a> '
+		}),
+		pnoa = L.tileLayer.wms("http://www.ign.es/wms-inspire/pnoa-ma?SERVICE=WMS&", {
+			layers: "OI.OrthoimageCoverage",
+			transparent: true,
+			format: 'image/jpeg',
+			version: '1.3.0',
+			attribution: 'Dades &copy; <a href="http://osm.org/copyright" target="blanck">Col·laboradors de OpenStreetMap</a> (<a href="http://www.openstreetmap.org/copyright" target="blanck">ODbL</a>) | Ortofotografia <a href="http://www.scne.es/productos.html#OrtoPNOA" target="blanck">PNOA</a> \u00a9 <a href="http://www.ign.es" target="blanck">Instituto Geográfico Nacional de España</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode.es" target="blanck">CC BY 4.0</a>) | <a href="https://github.com/paunofu/Aparcabicis-a-la-Marina" target="blanck">Més info</a> '
+		});
+		icv = L.tileLayer("https://terramapas.icv.gva.es/0202_2021CVAL0025_3857/wmts/1.0.0/01_8bits_01_RGB_05_PNG/default/GMEPSG3857/{z}/{y}/{x}.png", {
+			attribution: 'Dades &copy; <a href="http://osm.org/copyright" target="blanck">Col·laboradors de OpenStreetMap</a> (<a href="http://www.openstreetmap.org/copyright" target="blanck">ODbL</a>) | Ortofotografia \u00a9 <a href="https://icv.gva.es/va/" target="blanck">Institut Cartogràfic Valencià</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode.es" target="blanck">CC BY 4.0</a>) | <a href="https://github.com/paunofu/Aparcabicis-a-la-Marina" target="blanck">Més info</a> '
+		});
+
+	var map = L.map('map', {
+		center: [38.70, 0.1086],
+		zoom: 11,
+		layers: [osmcarto]
+	});
+
+	var baseLayers = {
+		"Carrerer (OSM)": osmcarto,
+		"Ortofotos (ICV)": icv,
+		"Ortofotos (IGN)": pnoa
+	};
+
+	L.control.layers(baseLayers).addTo(map);
+
+		
+		var marcadormarro = L.icon({
+			iconUrl: 'vending_machine.svg',
+			iconSize: [37,37]
+			});;
+
+	
+		var maquinaexpenedora = L.geoJson(maquina, {
+			pointToLayer: function(feature,latlng){
+			var marker = L.marker(latlng,{icon: marcadormarro});
+			marker.bindPopup('<h1>'+feature.properties.name+'</h1><p>Horari: '+feature.properties.opening_hours+'</p>');
+			return marker;
+			}});
+
+	
+	var marcadorblanc = L.icon({
+			iconUrl: 'TABACOS.jpg',
+			iconSize: [37,37]
+			});;
+
+	
+		var estancs = L.geoJson(estanc, {
+			pointToLayer: function(feature,latlng){
+			var marker = L.marker(latlng,{icon: marcadorblanc});
+			marker.bindPopup('<h1>'+feature.properties.name+'</h1><p>Expendiduria: '+feature.properties.ref+'</p><p>Horari: '+feature.properties.opening_hours+'</p>');
+			return marker;
+			}});
+
+	 		
+		var clusters = L.markerClusterGroup({ showCoverageOnHover: false });
+		clusters.addLayer(estancs);
+		clusters.addLayer(maquinaexpenedora);
+		map.addLayer(clusters);
+</script>
+
+</body>
+
+</html>

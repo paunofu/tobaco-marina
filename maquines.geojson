@@ -1,0 +1,65 @@
+var maquina=
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2022-10-23T14:07:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4976036524",
+        "air_conditioning": "yes",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "De Copas",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "outside",
+        "vending": "cigarettes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1120364,
+          38.838863
+        ]
+      },
+      "id": "node/4976036524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9376131989",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "check_date": "2022-09-08",
+        "cuisine": "regional",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "La cambra del Senyoret",
+        "opening_hours": "Dm,Dx 08:30-18:30; Dj 08:30-18:00; Dv,Ds 09:00-18:00; Dm 09:00-18:30; Dl Tancat",
+        "outdoor_seating": "no",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "reservation": "yes",
+        "smoking": "outside",
+        "vending": "cigarettes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1119963,
+          38.8380613
+        ]
+      },
+      "id": "node/9376131989"
+    }
+  ]
+}
